@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap);
+body {font-family: Poppins, sans-serif; font-weight:400; font-size:16px;}
+
+ul {padding: 0; list-style: none; margin: 0;}
+h1 {font-size: 30px; font-weight: 400;}
+h1 span {font-size: 54px; font-weight: 600; display: block;}
+.login {display: flex; height: 100vh}
+.login-left {width: 50%; position: relative;}
+.login-item {background-size: cover; height: 100%; color: #FFF; text-align: center; padding: 50px 100px; background-position: center; background-color: #1f185e;}
+.login-item hr {width: 60px; height: 5px; border-radius: 50px; background: #DADBF8;}
+.login-item h3 {font-size: 26px; font-weight: 600; margin-bottom: 15px;}
+.login-item p {font-weight: 300; font-size: 16px;}
+.login-item ul {display: flex; gap: 10px; justify-content: center; margin-top: 25px;}
+.login-item ul li:hover {opacity: 0.8}
+.login-right {width: 50%; padding: 50px 100px; color: #000; display: flex; align-items: center; justify-content: center}
+.login-right img {margin-bottom: 30px;}
+.login-right h4 {font-family: Poppins; font-size: 16px; font-style: normal; font-weight: 300; line-height: normal;}
+.login-right form {margin: 30px 0;}
+.login-right h4 a {color: #4F48A8; font-weight: 500;}
+.login-right .form-control {height: 50px;}
+.login-right label {margin-bottom: 5px;}
+.login-right button {height: 50px;border-radius: 5px; background: #241A61; width: 100%; color: #fff; font-weight: 500; margin-top: 15px}
+.login-right button:hover {background: #473893}
+.login-right p {color: #727272; font-size: 14px; text-align: center}
+.login-right p span { display: block}
+.login-right p span a { color: #4F48A8; font-weight: 500}
+.slick-list{overflow: hidden;height: 100%;}
+.slick-track {display: flex;height: 100%;}
+.slick-dots { display: flex; position: absolute; bottom: 30px; gap: 10px; justify-content: center; width: 100%}
+.slick-dots li button {font-size: 0; border: none; height: 17px; width: 17px; border-radius: 50px; outline: none !important; cursor: pointer;}
+.slick-dots li.slick-active button {background: #9371F0}
+
+.arrow-icon {display:none;}
+.arrow-icon {text-align: center;}
+.arrow-icon a {background: #d7d9f8; display: block; width: 30px; height: 30px; line-height: 25px; border-radius: 50px; margin: -10px auto; position: relative; z-index: 1;}
+.arrow {border: solid black; border-width: 0 3px 3px 0; display: inline-block; padding: 3px; transform: rotate(45deg); -webkit-transform: rotate(45deg);}
+.vert-move {-webkit-animation: mover 1s infinite  alternate; animation: mover 1s infinite  alternate;}
+.vert-move {-webkit-animation: mover 1s infinite  alternate; animation: mover 1s infinite  alternate;}
+@-webkit-keyframes mover { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); }}
+@keyframes mover { 0% { transform: translateY(0); } 100% { transform: translateY(-10px); }}
+
+
+
+@media (max-width:1400px){
+h1 {font-size: 20px;}
+.login-item h3 {font-size:20px;}
+.login-right img {width:250px;margin-bottom:15px;}
+.login-right .form-control {height:40px;}
+.login-right .form-group {margin-bottom:10px;}
+.login-item p {font-size:14px;}
+.slick-dots li button {height:10px; width:10px;}
+.login-right p {font-size: 12px;}
+.login-right form {margin: 20px 0;}
+}
+
+@media (max-width: 991px){
+.login-right { width: 100%; padding: 50px 25px}
+.login-left {width: 100%;}
+.login {display: block; height: auto}
+.login-item {padding: 50px 10px; height: auto; background-position: top}}
+
+@media (max-width: 767px){
+h1 {font-size: 20px; font-weight: 400;}
+h1 span {margin-bottom: 5px; font-size: 28px;}
+.login-item {background: #271f6a !important; padding:20px 10px 100px 10px;}
+.login-item h3 {font-size: 19px; font-weight: 600; margin-bottom: 15px;}
+.login-right {padding: 50pxx;}
+.login-right img { width:250px; margin-bottom:15px;}
+.login-right form {margin: 20px 0}
+.login-right h4 {font-size: 14px; text-align: center;}
+.login-right p span {font-size: 12px;}
+.login-right p span {display: inline;}
+.slick-dots {bottom: 65px;}
+.login-form a img {display: block; margin: 0 auto 25px;}
+.arrow-icon {display:block;}
+}
+
+
+
+
+
